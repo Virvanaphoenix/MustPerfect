@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+          android:id="@+id/adapter_text"
+          android:background="@drawable/shape_green_white"
+          android:paddingLeft="15dip"
+          android:paddingRight="15dip"
+          android:paddingTop="5dip"
+          android:paddingBottom="5dip"
+          android:textColor="@color/green"
+          style="@style/common_black_16_text"
+        />

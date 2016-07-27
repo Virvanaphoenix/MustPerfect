@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/search_title_lin"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/shape_search"
+            android:orientation="horizontal">
+
+            <com.feng.mustwin.view.edittext.DeletableEditText
+                android:id="@+id/main_first_search_edit"
+                style="@style/common_black_16_text"
+                android:layout_width="260dp"
+                android:layout_height="32dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@drawable/shape_edittext"
+                android:drawablePadding="10dip"
+                android:hint="@string/class_search"
+                android:imeOptions="actionSearch"
+                android:paddingBottom="5dip"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip"
+                android:paddingTop="5dip"
+                android:singleLine="true" />
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="50dp"
+                android:background="@color/main_red" />
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_marginLeft="5dp"
+                android:clickable="true"
+                android:padding="5dp"
+                android:src="@drawable/search" />
+
+        </LinearLayout>
+    </LinearLayout>
+    <ListView
+    android:id="@+id/lv_search"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/search_title_lin"
+        android:divider="@color/main_red"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+</ListView>
+
+
+    <RelativeLayout
+        android:id="@+id/search_nothing_rel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/search_title_lin"
+        android:layout_centerInParent="true"
+        android:background="@color/grey"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/result_nothing_search"
+            style="@style/common_black_18_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawablePadding="10dip"
+            android:drawableTop="@drawable/search_nothing"
+            android:gravity="center"
+            android:paddingBottom="40dip"
+            android:text="@string/result_nothing_search"
+            android:textColor="@color/text_grey" />
+    </RelativeLayout>
+
+</RelativeLayout>
+

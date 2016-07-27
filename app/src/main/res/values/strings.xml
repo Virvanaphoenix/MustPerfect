@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">狙杀黑中介</string>
+    <string name="action_settings">Settings</string>
+    <string name="clear_search">清除历史记录</string>
+    <string name="class_search">请输入搜索内容</string>
+    <string name="just_search">最近搜索</string>
+    <string name="result_search">以下是搜索%1$s的结果</string>
+    <string name="result_nothing_search">很抱歉\n没有搜索到%1$s的相关内容</string>
+
+    <string name="main_nearby">附近</string>
+    <string name="main_query">查询</string>
+    <string name="main_upload">上传</string>
+    <string name="main_about">关于</string>
+    <string name="reminder">温馨提示</string>
+    <string name="reminder_content">此号码可能是万恶的黑中介\n是否继续拨打？</string>
+
+
+    <string name="phone_yes">是</string>
+    <string name="phone_no">否</string>
+    <string name="report_time">举报时间：</string>
+    <string name="report_num">中介电话：</string>
+    <string name="report_con">内容：</string>
+    <string name="upload">上传</string>
+    <string name="about">上传</string>
+
+    <string name="connect_network">请连接网络~</string>
+
+
+
+</resources>

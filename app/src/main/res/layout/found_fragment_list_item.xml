@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_item"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="10dp">
+
+
+    <TextView
+        style="@style/common_red_18_text"
+        android:text="18710235507"
+        android:id="@+id/tv_phonenum" />
+
+    <TextView
+        style="@style/common_grey_16_text"
+        android:text="举报时间：2015-09-28"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_report_time" />
+
+    <TextView
+        style="@style/common_grey_16_text"
+        android:text="report_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_report_con" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="10dp"
+        android:background="@color/main_red"></View>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="main_red">#bd3838</color>
+
+    <color name="text_black">#333333</color>
+    <color name="main_bg">#ffffff</color>
+    <color name="red_backgrounds">#f45e5e</color>
+    <color name="bg_btn_red_pressed">#df4d4d</color>
+    <!--展览路主色调-->
+    <color name="zhanlan_color">#00bbd2</color>
+
+    <!-- 点击放大的圈的颜色 -->
+    <color name = "rippelColor">#ffc2c2c2</color>
+
+    <color name = "green">#2fcc71</color>
+    <color name = "item_press">#eeeeee</color>
+    <color name = "green_deep">#26a35a</color>
+    <color name = "green_light">#d2f1e4</color>
+    <color name = "orange">#ff4000</color>
+    <color name = "black">#333333</color>
+    <color name = "orange_deep">#eb2000</color>
+    <color name = "white">#ffffff</color>
+    <color name = "load">#cccccc</color>
+    <color name = "grey">#ededf3</color>
+    <color name = "bottom_grey">#BFBFBF</color>
+    <color name = "grey_line">#dddddd</color>
+    <color name = "grey_deep">#9F988D</color>
+    <color name = "grey_edit">#F7EBE1</color>
+    <color name = "bottom_bg_color">#FDF7E7</color>
+    <color name = "list_back_white">#E7DBD2</color>
+    <color name = "online_top">#FFD0D0D0</color>
+    <color name = "text_grey">#999999</color>
+    <color name = "video_talk_edit_bg">#ededf3</color>
+
+    <drawable name="transparent">#00000000</drawable>
+    <color name="transparent">#00000000</color>
+    <color name="aaaa">#FF949494</color>
+
+    <color name="common_white">#ffffff</color>
+    <color name="common_white2">#e0ffffff</color>
+    <color name="common_white_shadow">#414141</color>
+    <color name="common_white_disabled">#e7e7e7</color>
+    <!-- For main texts -->
+    <color name="common_dark">#3d5562</color>
+    <color name="common_dark_shadow">#dedede</color>
+    <color name="common_dark_disabled">#9aa7af</color>
+    <!-- For secondary texts -->
+    <color name="common_grey">#8496a0</color>
+    <color name="common_grey_disabled">#aabbc4</color>
+    <!-- For danger cases, such as virus, file delete... -->
+    <color name="common_red">#e62f2f</color>
+    <!-- For warning cases, such as trashes... -->
+    <color name="common_yellow">#f1930d</color>
+    <!-- For safe cases -->
+    <color name="common_green">#60990c</color>
+    <!-- For suggestions -->
+    <color name="common_blue">#4b8bbd</color>
+    <color name="tab_indicator_text_selected">#ffffff</color>
+    <color name="tab_indicator_text_unselected">#aac5d7</color>
+    <color name="page_viewer_margin_color">#FFFFC445</color>
+    <color name="main_bottom">#FFF9F9F9</color>
+    <color name="btn_grey">#FFCCCCCC</color>
+    <color name="video_view_bg">#60000000</color>
+
+    <!--tab-->
+    <color name="tab_pstsunderlinecolor">#e0e0e0</color>
+
+</resources>

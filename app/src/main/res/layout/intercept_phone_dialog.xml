@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+    <TextView
+        style="@style/common_grey_18_text"
+        android:text="@string/reminder"
+        android:layout_marginTop="20dp"
+        android:id="@+id/tv_phone_dialog_title"
+        android:layout_gravity="center_horizontal" />
+    <TextView
+        style="@style/common_grey_16_text"
+        android:text="@string/reminder_content"
+        android:layout_marginTop="10dp"
+        android:id="@+id/tv_phone_dialog_content"
+        android:layout_gravity="center_horizontal" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+        <TextView
+            style="@style/common_grey_16_text"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:text="@string/phone_yes"
+            android:gravity="center"
+            android:background="@drawable/selector_login_btn"
+            android:id="@+id/tv_phone_dialog_yes"
+            android:layout_gravity="center_horizontal"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_phone_dialog_no"/>
+        <TextView
+            style="@style/common_grey_16_text"
+            android:layout_width="60dp"
+            android:layout_height="36dp"
+            android:text="@string/phone_no"
+            android:gravity="center"
+            android:id="@+id/tv_phone_dialog_no"
+            android:background="@drawable/selector_login_btn"
+            android:layout_gravity="center_horizontal"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

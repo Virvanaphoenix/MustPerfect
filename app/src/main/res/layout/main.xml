@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey"
+    android:orientation="vertical">
+
+
+    <com.feng.mustwin.view.NoScrollViewPager
+        android:id="@+id/tabmain_viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/grey_line" />
+
+    <LinearLayout
+        android:id="@+id/main_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@color/main_bottom"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/main_bottom_online_text"
+            style="@style/common_14_text"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_bottom_nearby"
+            android:gravity="center"
+            android:text="@string/main_nearby"
+            android:textColor="@drawable/selector_bottom_textcolor" />
+
+        <TextView
+            android:id="@+id/main_bottom_offline_text"
+            style="@style/common_14_text"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_bottom_query"
+            android:gravity="center"
+            android:text="@string/main_query"
+            android:textColor="@drawable/selector_bottom_textcolor" />
+
+        <TextView
+            android:id="@+id/main_bottom_kao_text"
+            style="@style/common_14_text"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_bottom_upload"
+            android:gravity="center"
+            android:text="@string/main_upload"
+            android:textColor="@drawable/selector_bottom_textcolor" />
+
+        <TextView
+            android:id="@+id/main_bottom_mine_text"
+            style="@style/common_14_text"
+            android:layout_width="fill_parent"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/selector_bottom_about"
+            android:gravity="center"
+            android:text="@string/main_about"
+            android:textColor="@drawable/selector_bottom_textcolor" />
+    </LinearLayout>
+</LinearLayout>
+

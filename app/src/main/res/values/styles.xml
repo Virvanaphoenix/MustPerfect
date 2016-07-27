@@ -1,0 +1,293 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/main_red</item>
+        <item name="colorPrimaryDark">@color/main_red</item>
+        <item name="colorAccent">@color/main_red</item>
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+
+
+    <style name = "AppNoTitleTheme" parent = "android:Theme.Light.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimationActivity</item>
+    </style>
+    <style name="WiFiListTheme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/WiFiListAnimationActivity</item>
+    </style>
+
+    <style name="Button">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:padding">5dip</item>
+    </style>
+
+    <style name="ButtonTop" parent="@style/Button">
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_height">48dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="ButtonBottom" parent="@style/Button">
+        <item name="android:layout_width">60dip</item>
+    </style>
+
+    <style name="ButtonConnect" parent="@style/Button">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_width">85dip</item>
+        <item name="android:layout_height">38dip</item>
+    </style>
+
+    <style name="help_title">
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="help_content">
+        <item name="android:textSize">10sp</item>
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ListText">
+        <item name="android:typeface">monospace</item>
+    </style>
+
+    <style name="ListTextTitle" parent="ListText">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="ListTextSummary" parent="ListText">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        　　   <item name="android:windowFrame">@null</item>
+        　　   <item name="android:windowIsFloating">true</item>
+        　　   <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowNoTitle">true</item>
+
+        　　</style>
+
+    <style name="CustomProgressStyle" parent="@android:style/Widget.ProgressBar.Large">
+        <item name="android:minWidth">25dip</item>
+        <item name="android:maxWidth">25dip</item>
+        <item name="android:minHeight">25dip</item>
+        <item name="android:maxHeight">25dip</item>
+    </style>
+
+    <style name="CustomDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+    </style>
+
+    <style name="CustomProgressDialog" parent="@style/CustomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="myAnimStyleDialog" parent="android:Animation">
+        <item name="@android:windowEnterAnimation">@anim/dialog_enter</item>
+        <item name="@android:windowExitAnimation">@anim/dialog_exit</item>
+    </style>
+
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <style name="transcutestyle" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@android:color/transparent</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowIsTranslucent">true</item><!--半透明-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@android:color/transparent</item><!--背景透明-->
+        <item name="android:backgroundDimAmount">0.3</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- wifi设置 -->
+    <style name="MoreBottom">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <!-- <item name="android:windowIsFloating">true</item>是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <!-- <item name="android:windowFullscreen">true</item> -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+
+    </style>
+    <!-- 挖宝从上往下的界面动画 -->
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/more_bottom_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/more_bottom_out</item>
+    </style>
+
+    <!-- 挖宝的半透明背景 -->
+    <style name="Transparent">
+        　　                        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        　　                        <item name="android:windowIsTranslucent">true</item>
+        　　                        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+        　　</style>
+
+    <!-- Activity切换的动画 -->
+    <style name="AnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <!-- wifilist的Activity切换的动画 -->
+    <style name="WiFiListAnimationActivity" mce_bogus="1" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/more_bottom_in</item>
+        <item name="android:taskCloseExitAnimation">@anim/more_bottom_out</item>
+        <item name="android:activityCloseExitAnimation">@anim/more_bottom_out</item>
+    </style>
+
+    <!-- 通用textview大小及颜色-->
+    <style name="common_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <!--  (较黑色的textView) -->
+    <style name="common_black_text" parent="@style/common_text">
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+    <!--  (较黑色的textView) -->
+    <style name="common_red_text" parent="@style/common_text">
+        <item name="android:textColor">@color/main_red</item>
+    </style>
+    <!--  (淡灰色的textView) -->
+    <style name="common_grey_text" parent="@style/common_text">
+        <item name="android:textColor">@color/text_grey</item>
+    </style>
+    <!--  (白色的textView) -->
+    <style name="common_white_text" parent="@style/common_text">
+        <item name="android:textColor">@color/main_bg</item>
+    </style>
+
+    <!--  (白色的textView) -->
+    <style name="common_orange_text" parent="@style/common_text">
+        <item name="android:textColor">@color/orange</item>
+    </style>
+    <!-- 18sp -->
+    <style name="common_18_text" parent="@style/common_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!-- 16sp -->
+    <style name="common_16_text" parent="@style/common_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!-- 14sp -->
+    <style name="common_14_text" parent="@style/common_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  18sp,黑色的textView -->
+    <style name="common_black_18_text" parent="@style/common_black_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  18sp,灰色的textView -->
+    <style name="common_grey_18_text" parent="@style/common_grey_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  16sp,黑色的textView -->
+    <style name="common_black_16_text" parent="@style/common_black_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  14sp,黑色的textView -->
+    <style name="common_black_14_text" parent="@style/common_black_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  12sp,黑色的textView -->
+    <style name="common_black_12_text" parent="@style/common_black_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <!--  18sp,红色的textView -->
+    <style name="common_red_18_text" parent="@style/common_red_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <!--  16sp,红色的textView -->
+    <style name="common_red_16_text" parent="@style/common_red_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  14sp,黑色的textView -->
+    <style name="common_red_14_text" parent="@style/common_red_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  12sp,黑色的textView -->
+    <style name="common_red_12_text" parent="@style/common_red_text">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  16sp,灰色的textView -->
+    <style name="common_grey_16_text" parent="@style/common_grey_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  14sp,灰色的textView -->
+    <style name="common_grey_14_text" parent="@style/common_grey_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  14sp,白色的textView -->
+    <style name="common_white_14_text" parent="@style/common_white_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  16sp,白色的textView -->
+    <style name="common_white_16_text" parent="@style/common_white_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  18sp,白色的textView -->
+    <style name="common_white_18_text" parent="@style/common_white_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!--橙色-->
+    <style name="common_orange_14_text" parent="@style/common_orange_text">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--  16sp,白色的textView -->
+    <style name="common_orange_16_text" parent="@style/common_orange_text">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <!--  18sp,白色的textView -->
+    <style name="common_orange_18_text" parent="@style/common_orange_text">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+</resources>

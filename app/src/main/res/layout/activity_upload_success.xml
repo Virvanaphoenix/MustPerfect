@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/grey">
+    <include layout="@layout/title_main"/>
+
+    <com.feng.mustwin.view.DrawHookView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/view" />
+    <TextView
+        style="@style/common_red_18_text"
+        android:text="上传成功"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/view"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>
